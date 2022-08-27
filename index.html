@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <title>Lista Telefonica</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="text-center">Lista Telefonica</h1>
+            </div>
+        </div>
+
+        <form id="formContact">
+            <div class="row">
+                <div class="form-group col-sm-3 mb-3">
+                    <label for="form-name">Nome:</label>
+                    <input type="text" name="name" id="form-name" class="form-control" required>
+                </div>
+                <div class="form-group col-sm-3 mb-3">
+                    <label for="form-phone">Telefone:</label>
+                    <input type="text" name="phone" id="form-phone" class="form-control" required>
+                </div>
+                <div class="form-group col-sm-3 mb-3">
+                    <label for="form-zipcode">Cep:</label>
+                    <input type="text" name="zipcode" id="form-zipcode" class="form-control" required>
+                </div>
+                <div class="col-sm-3 d-flex align-items-end mb-3">
+                    <button type="submit" class="btn btn-success">Adicionar</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <table id="list-contacts" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Telefone</th>
+                            <th>Cep</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/book-ctrl.js"></script>
+</body>
+
+</html>
